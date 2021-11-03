@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Basic:wght@700&family=Lato&family=Yeseva+One&display=swap'),
+        "reset",
+        "variables";
+
+header{
+    
+    background-image: url('images/header_bg.png');
+
+    nav{
+        padding: 0 9%;
+        display:flex;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0,0,0,0) 100%);
+        img{
+            height:110px;
+        }
+        .links{
+            margin-left: auto;
+            display:flex;
+            flex-direction: row;
+            height:100%;
+            
+            
+            ul{
+                display:flex;
+                gap: 45px;
+                list-style-type: none;
+                
+                li{
+                    &.active{
+                        border-top: 3px solid $text-white;
+                    }
+                    padding-top: 50px;
+                    a{
+                        color: $text-white;
+                        text-decoration: none;
+                        font-size: 21px;
+                        font-family: 'Gentium Book Basic', serif;
+                    }
+                    
+                }
+            }
+            .social{
+                padding-top: 50px;
+                display:flex;
+                flex-direction:row;
+                margin-left: 20px;
+                gap: 10px;
+                &-icon{
+                    color: $icon-orange;
+                }
+            }
+        }
+    }
+    section{
+        width: 100%;
+        padding: 120px 0;
+        display:flex;
+        justify-content: center;
+        
+        .container{
+            width:60%;
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            padding-bottom: 20px;
+            
+            h1{
+                font-family: 'Yeseva One', cursive; 
+                font-size: 72px;
+                color: $text-white;
+                text-align: center;
+            }
+            .divider{
+                width:235px;
+                margin: 30px 0;
+            }
+            .duo{
+                display:flex;
+                gap: 30px;
+                &-button{
+                    padding: 20px 50px;
+                    text-decoration: none;
+                    color: $text-white;
+                    text-transform: uppercase;
+                    font-family: 'Lato', sans-serif;
+                    font-size: 18px;
+                    &.black{
+                        border: 1px solid $color-black;
+                        background-color: $black-transparent;
+                    }
+                    &.white{
+                        border: 1px solid $text-white;
+                        background-color:$white-transparent;
+                    }
+                }
+            }
+            
+                
+            
+        }
+    }
+}
+.intro{
+    width:100%;
+    
+}
